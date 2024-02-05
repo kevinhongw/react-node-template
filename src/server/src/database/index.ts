@@ -1,4 +1,4 @@
 import Knex from 'knex';
 import configs from '../knexfile';
 
-export const database = Knex(configs[process.env.NODE_ENV || 'development']);
+export const knex = Knex(configs[process.env.NODE_ENV || 'development']);
