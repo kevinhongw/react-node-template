@@ -1,5 +1,5 @@
 import Knex from 'knex';
-import { database } from 'src/database';
+import { knex } from 'database';
 
 export type DateType = {
   created_at: Date;
@@ -15,7 +15,7 @@ export class Model {
     if (!this.tableName) {
       throw new Error('You must set a table name!');
     }
-    return database(this.tableName);
+    return knex(this.tableName);
   }
 
   public static async all<Result>(): Promise<Result[]> {
