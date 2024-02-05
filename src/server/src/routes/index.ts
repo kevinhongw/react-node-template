@@ -4,6 +4,6 @@ import { healthCheck } from './health-check';
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/healthCheck', healthCheck);
+router.get('/health', healthCheck);
 
 export default router;
