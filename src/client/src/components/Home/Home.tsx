@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { useHealthCheck } from '../../hooks/useHealthCheck';
+import { useHealthCheck } from 'hooks/useHealthCheck';
 
 interface Props {}
 
