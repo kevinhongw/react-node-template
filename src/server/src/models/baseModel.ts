@@ -1,5 +1,4 @@
-import Knex from 'knex';
-import { knex } from 'database';
+import { knex } from '../database';
 
 export type DateType = {
   created_at: Date;

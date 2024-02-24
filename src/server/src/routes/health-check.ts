@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { knex } from 'database';
+import { knex } from '../database';
 
 export const healthCheck = async (req: Request, res: Response) => {
   console.log('Health check route hit');

@@ -1,5 +1,26 @@
 # react-node-template
 
+## Install
+
+```
+    // 1st tab
+    // root folder
+    docker-compsoe up
+
+    // 2nd tab
+    cd src/server
+    npm ci
+    cd src
+    npx knex migrate:latest
+    npm start
+
+    // 3rd tab
+    cd src/client
+    npm ci
+    npm start
+
+```
+
 ### Create new migration
 
 ```
